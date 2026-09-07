@@ -285,30 +285,33 @@ html, body {
     margin-bottom: 5px;
 }
 .table-card {
-  width: calc(100% - 40px); /* По ширине остальных карточек */
+  width: calc(100% - 40px);
   max-width: 400px;
   margin: 25px auto;
-  padding: 20px;
-  background: #ffffff; /* Чистый белый фон карточки */
+  padding: 22px 15px;
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(204, 167, 48, 0.3); /* Тонкая золотистая рамка */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(197, 160, 89, 0.4); /* Мягкая золотистая рамка */
   text-align: center;
   box-sizing: border-box;
 }
 
 .table-label {
-  font-size: 0.85rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #7a6b58; /* Темно-бежевый читаемый цвет */
-  margin-bottom: 8px;
+  letter-spacing: 3px;
+  color: #8c7355; /* Изысканный бронзово-золотой оттенок */
+  margin-bottom: 6px;
   font-weight: 600;
 }
 
 .table-number {
-  font-size: 2.2rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.8rem;
   font-weight: 700;
-  color: #a55310; /* Темный контрастный цвет шрифта */
-  font-family: serif; /* Элегантный засечный шрифт */
+  color: #2b2118; /* Глубокий темный цвет */
+  line-height: 1.1;
+  font-style: italic; /* Легкий курсив придает вытонченность */
 }

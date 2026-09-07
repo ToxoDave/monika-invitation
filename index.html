@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Սուրբ Մկրտություն | Բալույանց Մոնիկա</title>
     
+    <!-- Подключение элегантного шрифта Cormorant Garamond из Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -83,7 +87,7 @@
             </div>
             <!-- Блок с номером стола -->
 <div id="tableBlock" class="table-card" style="display: none;">
-  <p class="table-label"> Ձեր սեղանը </p>
+  <p class="table-label"> Ձեր սեղանը` </p>
   <div class="table-number" id="tableNumber">1</div>
 </div>
         </section>
@@ -145,10 +149,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const tableNumber = document.getElementById('tableNumber');
 
   // Если параметр table передается и равен от 1 до 6
-  if (table && table >= 1 && table <= 6) {
-    tableNumber.textContent = `№ ${table}`;
-    tableBlock.style.display = 'inline-block';
-  }
+if (table && table >= 1 && table <= 6) {
+  tableNumber.textContent = `№ ${table}`;
+  tableBlock.style.display = 'block';
+}
 });
 </script>
 </body>
