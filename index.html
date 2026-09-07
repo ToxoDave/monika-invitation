@@ -81,6 +81,11 @@
                 <p>📍 Odessa ռեստորանային համալիր</p>
                 <img src="odessa.jfif" alt="Restaurant Icon" class="icon">
             </div>
+            <!-- Блок с номером стола -->
+<div id="tableBlock" class="table-card" style="display: none;">
+  <p class="table-label">Ваш стол</p>
+  <div class="table-number" id="tableNumber">1</div>
+</div>
         </section>
 
         <!-- 5. Футер (появляется последним) -->
@@ -131,6 +136,20 @@
             removeInteractionListeners();
         }
     });
+
+    // Автоматическое считывание стола из ссылки
+document.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const table = urlParams.get('table');
+  const tableBlock = document.getElementById('tableBlock');
+  const tableNumber = document.getElementById('tableNumber');
+
+  // Если параметр table передается и равен от 1 до 6
+  if (table && table >= 1 && table <= 6) {
+    tableNumber.textContent = `№ ${table}`;
+    tableBlock.style.display = 'inline-block';
+  }
+});
 </script>
 </body>
 </html>
