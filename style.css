@@ -309,7 +309,7 @@ html, body {
 
 .table-number {
   font-family: inherit; /* Наследует красивый армянский шрифт сайта */
-  font-size: 4rem;
+  font-size: 7rem;
   font-weight: 700;
   color: #3d270c; /* Бронзово-золотой цвет под стиль заголовка */
   line-height: 1;
