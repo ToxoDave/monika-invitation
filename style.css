@@ -285,27 +285,30 @@ html, body {
     margin-bottom: 5px;
 }
 .table-card {
-  margin: 20px auto;
-  padding: 15px 25px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 16px;
-  display: inline-block;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 40px); /* По ширине остальных карточек */
+  max-width: 400px;
+  margin: 25px auto;
+  padding: 20px;
+  background: #ffffff; /* Чистый белый фон карточки */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(212, 175, 55, 0.3); /* Тонкая золотистая рамка */
   text-align: center;
+  box-sizing: border-box;
 }
 
 .table-label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  opacity: 0.8;
-  margin-bottom: 5px;
+  letter-spacing: 2px;
+  color: #7a6b58; /* Темно-бежевый читаемый цвет */
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .table-number {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #2c221e; /* Темный контрастный цвет шрифта */
+  font-family: serif; /* Элегантный засечный шрифт */
 }
