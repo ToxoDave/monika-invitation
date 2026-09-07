@@ -292,7 +292,7 @@ html, body {
   background: #ffffff; /* Чистый белый фон карточки */
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(212, 175, 55, 0.3); /* Тонкая золотистая рамка */
+  border: 1px solid rgba(204, 167, 48, 0.3); /* Тонкая золотистая рамка */
   text-align: center;
   box-sizing: border-box;
 }
@@ -309,6 +309,6 @@ html, body {
 .table-number {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #2c221e; /* Темный контрастный цвет шрифта */
+  color: #a55310; /* Темный контрастный цвет шрифта */
   font-family: serif; /* Элегантный засечный шрифт */
 }
